@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: cadetblue
+}
+.wraper{
+    width:1000px;
+    height:500px;
+
+    margin: 50px auto;
+}
+@media screen and(min-width:980px){
+    .wraper .box{
+        width: 205px;
+        height: 220px;
+        float:left;
+        margin:0 64px;
+    }  
+}
+@media screen and(max-width:980px){
+    .wraper .box{
+        width: 205px;
+        height: 220px;
+        float:left;
+        margin:0 64px;
+    }  
+}
+.box-mission .icon{
+    width: 174px;
+    height: 155px;
+    display: block;
+    background: url(img/mission.png) no-repeat;
+    margin: 0 auto;
+    transition: all 1.2s;
+}
+.box-mission .icon:hover{
+    transform: scale(1.2) rotate(360deg);
+}
+.box-play .icon{
+    width: 174px;
+    height: 155px;
+    display: block;
+    background: url(img/play.png) no-repeat;
+    margin: 0 auto;
+    transition: all 1.2s;
+}
+.box-play .icon:hover{
+    transform: scale(1.2) rotate(360deg);
+}
+.box-touch .icon{
+    width: 174px;
+    height: 155px;
+    display: block;
+    background: url(img/touch.png) no-repeat;
+    margin: 0 auto;
+    transition: all 1.2s;
+}
+.box-touch .icon:hover{
+    transform: scale(1.2) rotate(360deg);
+}
+.box .button{
+    text-decoration: none;
+    display: block;
+    width: 156px;
+    height: 45px;
+    line-height: 45px;
+    background:  url('img/allow.png') no-repeat 130px;
+    margin:40px auto;
+    font-family: "微软雅黑";
+    font-size:18px;
+    font-weight: bold;
+    color: #2ecc71;  
+    padding-left: 22px; 
+    border: 2px solid rgba(255,255,255,0.8);
+    transition:all 0.2s ease;
+    position: relative;
+}
+.box .button:hover{
+    background-position:140px;
+    border:2px solid rgba(255,255,255,1);
+}
+.box .line{
+    background:#fff;
+    display: block;
+    position: absolute;
+    transition: all 0.2s ease;
+}
+.box .line-top{
+    
+    width: 0px;
+    height:2px;
+    
+    top:-2px;
+    left:-100%;
+    
+}
+.box .button:hover .line-top{
+    width:182px;
+    left:-2px
+}
+.box .line-bottom{
+    
+    width: 0px;
+    height:2px;
+     
+    bottom:-2px;
+    right:-100%;
+     
+}
+.box .button:hover .line-bottom{
+    width:182px;
+    right:-2px
+}
+.box .line-left{
+    
+    width: 2px;
+    height:0px;
+     
+    left:-2px;
+    bottom:-100%;
+    
+}
+.box .button:hover .line-left{
+   height:49px;
+   bottom:-2px;
+}
+.box .line-right{
+    
+    width: 2px;
+    height:0px;
+     
+    right:-2px;
+    top:-100%;
+     
+}
+.box .button:hover .line-right{
+   height:49px;
+   top:-2px;
+}
