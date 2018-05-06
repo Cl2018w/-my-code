@@ -11,20 +11,14 @@ body{
 
     margin: 50px auto;
 }
-@media screen and(min-width:980px){
+
     .wraper .box{
         width: 205px;
         height: 220px;
         float:left;
         margin:0 64px;
     }  
-}
-@media screen and(max-width:600px){
-    .wraper .box{
-        width: 205px;
-        height: 220px;
-    }  
-}
+
 .box-mission .icon{
     width: 174px;
     height: 155px;
